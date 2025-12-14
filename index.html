@@ -2,23 +2,28 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>喵喵的連結入口</title>
-    <!-- ✅ 社群分享縮圖（OG） -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>喵喵教主｜連結入口</title>
+
+  <!-- ✅ 社群分享縮圖（OG） -->
   <meta property="og:title" content="喵喵教主｜連結入口">
   <meta property="og:description" content="務實接地氣，陪你創造未來">
-  <meta property="og:image" content="https://meowmeowjiaojhu.github.io/links/meowOG.png">
+  <meta property="og:image" content="https://meowmeowjiaojhu.github.io/links/meowOG.png?v=3">
   <meta property="og:url" content="https://meowmeowjiaojhu.github.io/links/">
   <meta property="og:type" content="website">
 
-  <!-- ✅ Favicon -->
-  <link rel="icon" href="meowlogo512.png">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ✅ Favicon（多路命中＋破快取） -->
+  <link rel="icon" type="image/png" sizes="32x32" href="meowlogo512.png?v=3">
+  <link rel="icon" type="image/png" sizes="16x16" href="meowlogo512.png?v=3">
+  <link rel="shortcut icon" type="image/png" href="meowlogo512.png?v=3">
+  <link rel="apple-touch-icon" sizes="180x180" href="meowlogo512.png?v=3">
 
   <style>
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                   "PingFang TC", "Noto Sans TC", sans-serif;
       background: #1b0f2f;
       color: #ffffff;
       text-align: center;
@@ -34,6 +39,64 @@
       margin-bottom: 8px;
       font-size: 28px;
       letter-spacing: 1px;
+    }
+
+    .small {
+      font-size: 14px;
+      opacity: 0.85;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: block;
+      margin: 14px 0;
+      padding: 14px 16px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.22);
+    }
+
+    .btn.primary {
+      background: linear-gradient(135deg, #f5c97b, #c89b3c);
+      color: #2a1a00;
+      font-weight: bold;
+      border: none;
+    }
+
+    .btn.primary:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>喵喵教主</h1>
+    <p class="small">務實接地氣，陪你創造未來</p>
+
+    <!-- 🔥 限時 -->
+    <a class="btn primary" href="#">
+      🌙【限時】年度／半年運勢指引
+    </a>
+
+    <!-- 核心服務 -->
+    <a class="btn" href="#">🔮 與喵聊聊｜對話與卡牌引導</a>
+    <a class="btn" href="#">🐾 與毛孩話家常｜動物溝通</a>
+    <a class="btn" href="#">✨ 傳遞光與愛｜離世動物溝通</a>
+    <a class="btn" href="#">🔎 關於喵喵</a>
+    <a class="btn" href="#">📖 文字與日常思考</a>
+
+  </div>
+</body>
+</html>
     }
 
     .small {
