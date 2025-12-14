@@ -69,18 +69,22 @@
       letter-spacing: 1px;
     }
 
-    /* Buttons */
-    .btn {
-      display: block;
-      margin: 14px 0;
-      padding: 14px 16px;
-      border-radius: 14px;
-      text-decoration: none;
-      color: #ffffff;
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      transition: all 0.2s ease;
-    }
+/* Buttons */
+.btn {
+  display: block;
+  margin: 14px 0;
+  padding: 16px 16px;          /* 稍微加高，手機更好按 */
+  border-radius: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+
+  white-space: normal;         /* ✅ 允許自動換行 */
+  line-height: 1.4;            /* ✅ 兩行時也好看 */
+}
+
 
     .btn:hover {
       background: rgba(255, 255, 255, 0.22);
