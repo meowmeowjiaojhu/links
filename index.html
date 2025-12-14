@@ -6,12 +6,20 @@
 
   <title>喵喵教主｜連結入口</title>
 
-  <!-- ✅ 社群分享縮圖（OG） -->
+  <!-- ✅ Open Graph -->
   <meta property="og:title" content="喵喵教主｜連結入口">
   <meta property="og:description" content="務實接地氣，陪你創造未來">
   <meta property="og:image" content="https://meowmeowjiaojhu.github.io/links/meowOG.png?v=3">
   <meta property="og:url" content="https://meowmeowjiaojhu.github.io/links/">
   <meta property="og:type" content="website">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- ✅ Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="喵喵教主｜連結入口">
+  <meta name="twitter:description" content="務實接地氣，陪你創造未來">
+  <meta name="twitter:image" content="https://meowmeowjiaojhu.github.io/links/meowOG.png?v=3">
 
   <!-- ✅ Favicon（多路命中＋破快取） -->
   <link rel="icon" type="image/png" sizes="32x32" href="meowlogo512.png?v=3">
@@ -35,15 +43,15 @@
       padding: 32px 16px 48px;
     }
 
-    /* ✅ Header 區 */
+    /* Header */
     .site-header {
-      margin-bottom: 24px;
+      margin-bottom: 28px;
     }
 
     .site-header .logo {
       width: 88px;
       height: 88px;
-      border-radius: 24px;   /* 想要全圓就改成 50% */
+      border-radius: 24px; /* 全圓改 50% */
       margin: 0 auto 10px;
       display: block;
     }
@@ -60,7 +68,7 @@
       opacity: 0.85;
     }
 
-    /* ✅ Buttons */
+    /* Buttons */
     .btn {
       display: block;
       margin: 14px 0;
@@ -88,7 +96,13 @@
       opacity: 0.9;
     }
 
-    /* ✅ Social buttons icon alignment */
+    .btn.disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    /* Social */
     .btn.social {
       display: flex;
       align-items: center;
@@ -103,38 +117,98 @@
 
     <!-- 品牌識別 -->
     <header class="site-header">
-      <img class="logo" src="meowlogo512.png" alt="喵喵教主 Logo">
+      <img class="logo" src="meowlogo512.png?v=3" alt="喵喵教主 Logo">
       <h1>喵喵教主</h1>
       <p class="small">務實接地氣，陪你創造未來</p>
     </header>
 
     <!-- 🔥 限時主打 -->
     <section aria-label="限時服務">
-      <a class="btn primary" href="https://calendly.com/meowlu-o41/yearlyguide">
-        【限時】📒人生節奏備忘錄｜塔羅流年×星盤推運
+      <a class="btn primary"
+         href="https://calendly.com/meowlu-o41/yearlyguide"
+         target="_blank"
+         rel="noopener noreferrer">
+        【限時】📒 人生節奏備忘錄｜塔羅流年 × 星盤推運
       </a>
     </section>
 
     <!-- 核心服務 -->
     <section aria-label="核心服務">
-      <a class="btn" href="https://calendly.com/meowlu-o41/meow_n_you">🔮 與喵聊聊｜對話與卡牌引導</a>
-      <a class="btn" href="https://calendly.com/meowlu-o41/plztailme">🦄 與毛孩話家常｜動物溝通</a>
-      <a class="btn" href="https://calendly.com/meowlu-o41/thepawertails">✨ 傳遞光與愛｜離世動物溝通</a>
-      <a class="btn" href="https://calendly.com/meowlu-o41/theportal">💎 豐盛之門｜塔羅×星盤（半年運）</a>
-      <a class="btn" href="#">🐾 喵掌花｜臼井靈氣療癒</a>
-      <a class="btn" href="about.html">🔎 關於喵喵</a>
-      <a class="btn" href="#">📖 文字與日常思考</a>
+      <a class="btn"
+         href="https://calendly.com/meowlu-o41/meow_n_you"
+         target="_blank"
+         rel="noopener noreferrer">
+        🔮 與喵聊聊｜對話與卡牌引導
+      </a>
+
+      <a class="btn"
+         href="https://calendly.com/meowlu-o41/plztailme"
+         target="_blank"
+         rel="noopener noreferrer">
+        🦄 與毛孩話家常｜動物溝通
+      </a>
+
+      <a class="btn"
+         href="https://calendly.com/meowlu-o41/thepawertails"
+         target="_blank"
+         rel="noopener noreferrer">
+        ✨ 傳遞光與愛｜離世動物溝通
+      </a>
+
+      <a class="btn"
+         href="https://calendly.com/meowlu-o41/theportal"
+         target="_blank"
+         rel="noopener noreferrer">
+        💎 豐盛之門｜塔羅 × 星盤（半年運）
+      </a>
+
+      <a class="btn disabled" aria-disabled="true">
+        🐾 喵掌花｜臼井靈氣療癒（準備中）
+      </a>
+
+      <a class="btn" href="about.html">
+        🔎 關於喵喵
+      </a>
+
+      <a class="btn"
+         href="https://discord.gg/kqp3Dsfz"
+         target="_blank"
+         rel="noopener noreferrer">
+        📖 文字與日常思考
+      </a>
     </section>
 
-    <!-- 分隔線 -->
     <hr style="opacity:0.2; margin:28px 0;">
 
     <!-- 社群平台 -->
     <section aria-label="社群平台">
-      <a class="btn social" href="#">📘 Facebook</a>
-      <a class="btn social" href="#">📸 Instagram</a>
-      <a class="btn social" href="#">🧵 Threads</a>
-      <a class="btn social" href="#">📝 Miin</a>
+      <a class="btn social"
+         href="https://www.facebook.com/meowmeowjiaojhu/"
+         target="_blank"
+         rel="noopener noreferrer">
+        📘 Facebook
+      </a>
+
+      <a class="btn social"
+         href="https://www.instagram.com/meowmeowjiaojhu/"
+         target="_blank"
+         rel="noopener noreferrer">
+        📸 Instagram
+      </a>
+
+      <a class="btn social"
+         href="https://www.threads.com/@meowmeowjiaojhu"
+         target="_blank"
+         rel="noopener noreferrer">
+        🧵 Threads
+      </a>
+
+      <a class="btn social"
+         href="https://miin.cc/user/meowmeow"
+         target="_blank"
+         rel="noopener noreferrer">
+        📝 Miin
+      </a>
     </section>
 
   </div>
