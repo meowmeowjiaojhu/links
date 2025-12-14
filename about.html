@@ -44,13 +44,27 @@
       font-size: 26px;
       letter-spacing: 1px;
     }
+
+    /* 文字區 */
     .lead{
       opacity: .9;
       font-size: 15px;
       line-height: 1.9;
       margin: 0 auto 22px;
-      text-align: left;
+      text-align: left; /* 預設：閱讀用左對齊 */
     }
+    .intro{
+      text-align: center; /* ✅ 只讓開頭那段置中 */
+      margin-bottom: 22px;
+    }
+    .outro{
+      text-align: center; /* ✅ 框框外的收尾宣言 */
+      margin: 24px auto 0;
+      opacity: .95;
+      line-height: 1.9;
+    }
+
+    /* 卡片 */
     .card{
       text-align:left;
       background: rgba(255,255,255,.08);
@@ -72,6 +86,8 @@
     .card li{
       margin: 6px 0;
     }
+
+    /* 按鈕 */
     .btn{
       display:block;
       margin: 18px 0 0;
@@ -84,6 +100,8 @@
       transition: all .2s ease;
     }
     .btn:hover{ background: rgba(255,255,255,.22); }
+
+    /* 小字 */
     .muted{
       opacity:.8;
       font-size:13px;
@@ -100,7 +118,8 @@
     <img class="logo" src="meowlogo512.png?v=3" alt="喵喵教主 Logo">
     <h1>關於喵喵</h1>
 
-    <p class="lead">
+    <!-- ✅ 置中的開頭介紹 -->
+    <p class="lead intro">
       喵喵｜務實型療癒工作者<br>
       用塔羅、動物溝通與深度對話，<br>
       幫你把靈性的啟發落實在生活中，<br>
@@ -132,11 +151,14 @@
         <li>希望有人替你做決定，把自己的人生交給別人負責</li>
         <li>希望有人幫你「規範」毛孩、把牠變成你想要的樣子</li>
       </ul>
-      <p style="margin:10px 0 0; opacity:.9;">
-        如果你想要的是一起釐清、一起前進，而不是把決定權交出去，<br>
-        那我們會很合。
-      </p>
     </div>
+
+    <!-- ✅ 你指定的句子：獨立在框框外 -->
+    <p class="lead outro">
+      如果你想要的是一起釐清、一起前進，<br>
+      把人生的決定權抓在手裡，<br>
+      那我們會很合。
+    </p>
 
     <a class="btn" href="./">← 回到連結入口</a>
 
