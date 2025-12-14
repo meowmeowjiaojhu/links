@@ -35,18 +35,32 @@
       padding: 32px 16px 48px;
     }
 
-    h1 {
-      margin-bottom: 8px;
+    /* ✅ Header 區 */
+    .site-header {
+      margin-bottom: 24px;
+    }
+
+    .site-header .logo {
+      width: 88px;
+      height: 88px;
+      border-radius: 24px;   /* 想要全圓就改成 50% */
+      margin: 0 auto 10px;
+      display: block;
+    }
+
+    .site-header h1 {
+      margin: 0 0 6px;
       font-size: 28px;
       letter-spacing: 1px;
     }
 
-    .small {
+    .site-header .small {
+      margin: 0;
       font-size: 14px;
       opacity: 0.85;
-      margin-bottom: 28px;
     }
 
+    /* ✅ Buttons */
     .btn {
       display: block;
       margin: 14px 0;
@@ -73,6 +87,14 @@
     .btn.primary:hover {
       opacity: 0.9;
     }
+
+    /* ✅ Social buttons icon alignment */
+    .btn.social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
   </style>
 </head>
 
@@ -80,7 +102,8 @@
   <div class="container">
 
     <!-- 品牌識別 -->
-    <header>
+    <header class="site-header">
+      <img class="logo" src="meowlogo512.png" alt="喵喵教主 Logo">
       <h1>喵喵教主</h1>
       <p class="small">務實接地氣，陪你創造未來</p>
     </header>
@@ -114,5 +137,4 @@
 
   </div>
 </body>
-
 </html>
