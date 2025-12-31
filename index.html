@@ -67,7 +67,7 @@
       letter-spacing: 1px;
     }
 
-    /* Buttons */
+    /* Buttons (base) */
     .btn {
       display: block;
       margin: 14px 0;
@@ -87,28 +87,34 @@
       background: rgba(255, 255, 255, 0.22);
     }
 
-.btn.primary {
-  background: linear-gradient(
-    135deg,
-    #7f7fd5 0%,
-    #c89bff 50%,
-    #f5c97b 100%
-  );
-  color: #2a1a00;
-  border: none;
-  box-shadow: 0 10px 28px rgba(0,0,0,0.25);
-}
-
-
-    .btn.disabled {
-      opacity: 0.45;
-      cursor: not-allowed;
-      pointer-events: none;
+    /* 讓 badge / title 在一般服務也能整齊換行 */
+    .btn span {
+      display: block;
     }
 
-    /* 限時主打三段式 */
-    .btn.primary span {
-      display: block;
+    .btn .badge {
+      font-size: 13px;
+      opacity: 0.85;
+      letter-spacing: 1px;
+    }
+
+    .btn .title {
+      margin-top: 6px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    /* Primary (主推版) */
+    .btn.primary {
+      background: linear-gradient(
+        135deg,
+        #7f7fd5 0%,
+        #c89bff 50%,
+        #f5c97b 100%
+      );
+      color: #2a1a00;
+      border: none;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.25);
     }
 
     .btn.primary .badge {
@@ -129,6 +135,12 @@
       background: rgba(0,0,0,0.35);
       margin: 0 auto;
       border-radius: 1px;
+    }
+
+    .btn.disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      pointer-events: none;
     }
 
     /* Social */
@@ -161,21 +173,7 @@
       <p class="small">務實接地氣，陪你創造未來</p>
     </header>
 
-<!-- ===== 限時主打｜開始 ===== -->
-
-<section aria-label="限時服務">
-  <a class="btn primary"
-     href="https://calendly.com/meowlu-o41/yearlyguide"
-     target="_blank"
-     rel="noopener noreferrer">
-    <span class="badge">限時</span>
-    <span class="title">📒 人生節奏備忘錄｜塔羅流年×星盤推運</span>
-  </a>
-</section>
-
-<!-- ===== 限時主打｜結束 ===== -->
-
-        <hr style="opacity:0.2; margin:28px 0;">
+    <hr style="opacity:0.2; margin:28px 0;">
 
     <!-- 核心服務 -->
     <section aria-label="核心服務">
@@ -196,9 +194,13 @@
       </a>
 
       <a class="btn disabled" aria-disabled="true">
+        🎡 人生遊樂園｜我的年度使用說明書（準備中）
+      </a>
+
+      <a class="btn disabled" aria-disabled="true">
         📓 事業筆記小本本｜星盤推運（準備中）
       </a>
-      
+
       <a class="btn disabled" aria-disabled="true">
         💕 自在關係小本本｜星盤推運（準備中）
       </a>
@@ -207,6 +209,24 @@
         🐾 喵掌花｜臼井靈氣療癒（準備中）
       </a>
     </section>
+
+    <!-- 年度服務（平常放最下面；11 月想主推再加 primary） -->
+    <section aria-label="年度服務">
+      <a class="btn"
+         href="https://calendly.com/meowlu-o41/yearlyguide"
+         target="_blank"
+         rel="noopener noreferrer">
+        <span class="badge">年度服務｜每年 12 月開啟</span>
+        <span class="title">📒 人生節奏備忘錄｜塔羅流年 × 星盤推運</span>
+      </a>
+    </section>
+
+    <!--
+📅 年度切換備忘：
+- 11 月：把上面年度服務的 class 改成 "btn primary"
+- 12 月後：移除 primary，回到 "btn"
+- 準備中服務：移除 disabled + 補 href
+-->
 
     <hr style="opacity:0.2; margin:28px 0;">
 
@@ -235,23 +255,24 @@
 
     <hr style="opacity:0.2; margin:28px 0;">
 
-<!-- 關於 -->
-<section class="footer" aria-label="關於喵喵">
+    <!-- 關於 -->
+    <section class="footer" aria-label="關於喵喵">
+      <a class="btn"
+         href="https://meowmeowjiaojhu.github.io/today/"
+         target="_blank"
+         rel="noopener noreferrer">
+        🌿 今日指引｜給今天的你
+      </a>
 
-  <a class="btn"
-     href="https://meowmeowjiaojhu.github.io/today/"
-     target="_blank"
-     rel="noopener noreferrer">
-    🌿 今日指引｜給今天的你
-  </a>
+      <a class="btn" href="about.html">
+        🔎 關於喵喵
+      </a>
 
-  <a class="btn" href="about.html">
-    🔎 關於喵喵
-  </a>
+      <p class="small footer-note" style="text-align:center;">
+        © 喵喵教主
+      </p>
+    </section>
 
-  <p class="small footer-note" style="text-align:center;">
-    © 喵喵教主
-  </p>
-</section>
-
-</div>
+  </div>
+</body>
+</html>
